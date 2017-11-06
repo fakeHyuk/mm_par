@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mm_controller:war exploded">
+    <output-path>$PROJECT_DIR$/mm_controller/target/mm_controller</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="mm_controller" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="mm_service-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="mm_service" />
+          </element>
+          <element id="archive" name="mm_dao-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="mm_dao" />
+          </element>
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/mm_controller/target/mm_controller/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="mm_controller/web/Web" />
+    </root>
+  </artifact>
+</component>
